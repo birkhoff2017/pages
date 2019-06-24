@@ -27,8 +27,8 @@
 <script type="text/javascript">
     var haidebao;
     $.ajax({
-        url: "./haidebao.json",//json文件位置
-        type: "post",
+        url: "https://birkhoff2017.github.io/pages/haidebao.json",//json文件位置
+        type: "get",
         dataType: "json", //返回数据格式为json
         success: function (data) {//请求成功完成后要执行的方法
             console.log(data)
