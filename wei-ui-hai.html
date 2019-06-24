@@ -9,7 +9,7 @@
     <script src="https://code.jquery.com/jquery-latest.js"></script>
 </head>
 <body>
-<div style="padding-top: 2rem;width: 90%">
+<div style="padding-top: 2rem;width: 90%;margin-left: 1rem">
     <input class="weui-input" type="number" pattern="[0-9]*" placeholder="请输入题号"
            style="border: 0.1rem solid green;width: 100%" id="question-number">
     <a href="javascript:;" onclick="display_question()" class="weui-btn weui-btn_plain-primary"
@@ -31,7 +31,6 @@
         type: "get",
         dataType: "json", //返回数据格式为json
         success: function (data) {//请求成功完成后要执行的方法
-            console.log(data)
             haidebao = data;
         }
     });
