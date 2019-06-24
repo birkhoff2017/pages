@@ -40,23 +40,23 @@
         $('#question').html('');
         $('#answer').html('');
         $('#get-answer-button').css('display', 'none');
-        var question_number = $('#question-number').val() - 1;
+        var question_number = $('#question-number').val();
         if (question_number == '') {
             alert("请输入题号");
             return;
         }
 
-        $('#question').html(haidebao.RECORDS[question_number]['question']);
+        $('#question').html(haidebao.RECORDS[question_number - 1]['question']);
         $('#get-answer-button').css('display', 'block');
     }
 
     function get_answer() {
-        var question_number = $('#question-number').val() - 1;
+        var question_number = $('#question-number').val();
         if (question_number == '') {
             alert("请输入题号");
             return;
         }
-        $('#answer').html(haidebao.RECORDS[question_number]['answer']);
+        $('#answer').html(haidebao.RECORDS[question_number - 1]['answer']);
     }
 
 
